@@ -8,12 +8,14 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: var(--bg-color02);
 }
 .resent_view{
   margin: 20px 100px;
   font-weight: bold;
   position: relative;
   width: 33.3%;
+  color: var(--f-color02);
 }
 .resent_view span{
   position: absolute;
@@ -21,13 +23,12 @@ header{
   display: inline-block;
   padding: 5px;
   border-radius:100%;
-  background: #000;
+  background: var(--bg-color02);
   color: var(--f-color02);
   font-size: 0.75rem;
 }
 .m_logo{
   width: 300px; height: 100%;
-  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +46,7 @@ header{
 #h_bottom{
   height: 50%;
   clear: both;
+  background: var(--bg-color02);
 }
 .i_sns{
   height: 100%;
@@ -55,11 +57,12 @@ header{
   height: 100%;
   display: flex;
   align-items: center;
-  font-size: var(--f-size02);
+  font-size: var(--f-size01);
+  color: var(--f-color02);
   gap: 2rem;
 }
 .h_nav{
-  width: 750px;
+  width: 600px;
   height: 100%;
   margin: 0px auto;
 }
@@ -69,11 +72,12 @@ header{
 .h_nav_ul{
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-weight: bold;
-  font-size: var(--f-size01);
+  color: var(--f-color02);
+  border-top: 1px solid var(--bg-color01);
 }
-.h_nav_ul{
+.h_nav_ul li{
   cursor: pointer;
 }
