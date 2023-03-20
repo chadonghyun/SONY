@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 기본 */
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 300, 400, 700;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
+:root{
+  --main-color: #000; /*한미레드*/
+
+  --f-color01: #000;
+  --f-color02: #fff;
+  --f-color03: #333;
+  --f-color04: #777;
+
+  --f-size01: 1.25rem; /*20px*/
+  --f-size02: 1.5rem; /*24px*/
+  --f-size03: 2rem; /*32px*/
+  --f-size04: 2.5rem; /*32px*/
+  --f-size05: 3rem; /*48px*/
+  --f-size06: 4rem; /*64px*/
+
+  --bg-color01: #fff;
+  --bg-color02: #000;
+  --bg-color03: #777;
+}
+
+body{
+  font-family: 'Noto Sans' Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: var(--f-color01);
+}
+
+a{
+  color: var(--t-color01);
+  text-decoration: none;
+}

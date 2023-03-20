@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SONY</title>
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 기본서식 -->
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+  <!-- 공통서식 -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <!-- 아이콘 폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- 콘텐츠 영역서식 -->
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <!-- css3추가속성시 접두사 자동으로 붙여주는 스크립트 -->
+  <script src="./script/prefixfree.min.js"></script>
+    <!-- 제이쿼리 -->
+  <script src="./script/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+
+  <aside>
+
+  </aside>
+
+  <header>
+    <article id="h_top">
+      <div class="resent_view">
+        <p>resent view<span>2+</span> </p>
+      </div>
+      <div class="m_logo">
+        <h1>
+          <a href="#">
+            <img src="./images/logo.cae2c042.svg" alt="소니로고">
+          </a>
+        </h1>
+      </div>
+      <div class="i_btn">
+        <ul class="i_btn_ul">
+          <li>
+            <a href="#none"><img src="./images/search.png" alt="검색"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/mypage.png" alt="마이페이지"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/cart.png" alt="장바구니"></a>
+            <span></span>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/hamburger_menu.png" alt="메뉴"></a>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article id="h_bottom">
+      <div class="i_sns">
+        <ul class="i_sns_ul">
+          <li>
+            <a href="#none"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#none"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#none"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>  
+      <div class="h_nav">
+        <nav>
+          <ul class="h_nav_ul">
+            <li>제품</li>
+            <li>기획전</li>
+            <li>멤버십</li>
+            <li>서비스</li>
+          </ul>
+        </nav>
+      </div>
+    </article>
+  </header>
+
+  <main>
+    <section id="main_banner">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/01_PC_main_IMG.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/02_PC_main_IMG.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/03_PC_main_IMG.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+</html>

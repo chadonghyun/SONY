@@ -1,0 +1,79 @@
+/* 헤더영역 */
+header{
+  width: 100%;
+  height: 150px;
+}
+#h_top{
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resent_view{
+  margin: 20px 100px;
+  font-weight: bold;
+  position: relative;
+  width: 33.3%;
+}
+.resent_view span{
+  position: absolute;
+  top: -10px;
+  display: inline-block;
+  padding: 5px;
+  border-radius:100%;
+  background: #000;
+  color: var(--f-color02);
+  font-size: 0.75rem;
+}
+.m_logo{
+  width: 300px; height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i_btn{
+  margin: 0px 100px;
+  width: 33.3%;
+}
+.i_btn_ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+#h_bottom{
+  height: 50%;
+  clear: both;
+}
+.i_sns{
+  height: 100%;
+  margin: 0px 100px;
+  float: left;
+}
+.i_sns_ul{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: var(--f-size02);
+  gap: 2rem;
+}
+.h_nav{
+  width: 750px;
+  height: 100%;
+  margin: 0px auto;
+}
+.h_nav nav{
+  height: 100%;
+}
+.h_nav_ul{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: var(--f-size01);
+}
+.h_nav_ul{
+  cursor: pointer;
+}
