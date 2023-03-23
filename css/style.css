@@ -1,12 +1,13 @@
+
+/* 메인 배너 섹션 */
+
 #main_banner{
   height: calc(100vh - 150px);
 }
-
 .swiper {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -15,7 +16,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -27,22 +27,308 @@
 }
 .m_sub{
   height: 650px;
+  margin-left: 12rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   color: var(--f-color02);
 }
-.m_sub p{
-  font-size: 5rem;
+.m_desc01{
+  display: flex;
+  flex-direction: column;
+  font-size: 6rem;
+  text-align: left;
+  font-weight: 900;
+  margin-top: 3rem;
+  letter-spacing: 2px;
+}
+.m_desc01 span{
+  line-height: 7.5rem;
+}
+.m_desc02{
+  padding-bottom: 7rem;
+}
+.m_desc02 span{
+  font-size: 1rem;
+  letter-spacing: -1px;
+}
+.m_desc03{
+  padding-bottom: 4rem;
+  transition: .4s;
+}
+.m_desc03 span{
   font-weight: bold;
 }
+.m_desc03 span i.fa-solid{
+  font-size: 1rem;
+  vertical-align: bottom;
+}
+.m_desc03:hover {
+  color: var(--sub-color);
+}
 .m_img01{
-  background: url(../images/01_PC_main_IMG.jpg);
+  background-size: contain;
+}
+.m_img01{
+  background: url(../images/01_PC_main_IMG.jpg) no-repeat center / cover;
 }
 .m_img02{
-  background: url(../images/02_PC_main_IMG.jpg);
+  background: url(../images/02_PC_main_IMG.jpg) no-repeat center / cover;
 }
 .m_img03{
-  background: url(../images/03_PC_main_IMG.jpg);
+  background: url(../images/03_PC_main_IMG.jpg) no-repeat center / cover;
+}
+
+
+
+/* 메인 이벤트 섹션 */
+
+#main_event{
+  text-align: center;
+}
+
+#main_event h2{
+  font-size: var(--f-size05);
+  padding: 5rem 0;
+  font-weight: 900;
+}
+.e_banner01{
+  width: 100%; height: 400px;
+  background: url(../images/PC_Main-Event-Banner-L_A.jpg) no-repeat center / cover;
+  position: relative;
+  margin: 1rem 0;
+}
+.e_desc{
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: start;
+  margin-left: 20rem;
+}
+.e_desc img{
+  width: 30px; height: 30px;
+}
+.e_desc_txt{
+  margin: 0px 6rem;
+}
+.e_desc_txt p{
+  font-size: var(--f-size04);
+  font-weight: bold;
+  line-height: 3rem;
+}
+.e_desc_txt span{
+  color: var(--f-color04);
+  font-weight: bold;
+  line-height: 5rem;
+  vertical-align: text-bottom;
+}
+.t_end{
+  text-align: end;
+}
+.e_banner02{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.e_banner02 div{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 1rem;
+  overflow: hidden;
+}
+.e_banner02 div:hover{
+  background-size: 110%;
+}
+.e_banner02 div p{
+  font-size: var(--f-size04);
+  text-align: start;
+  padding: 1rem;
+  font-weight: bold;
+}
+.e_banner02 div span{
+  padding: 1rem;
+  font-size: 1rem;
+}
+.b_01{
+  background: url(../images/Main-Event-Banner-S01.jpg) no-repeat center / cover;
+} 
+.b_02{
+  background: url(../images/Main-Event-Banner-S02.jpg) no-repeat center / cover;
+}
+.b_03{
+  background: url(../images/Main-Event-Banner-S03.jpg) no-repeat center / cover;
+}
+
+
+/* 메인 제품 섹션 */
+
+#main_prd{
+  text-align: center;
+}
+#main_prd h2{
+  font-size: var(--f-size05);
+  padding: 5rem 0;
+  font-weight: 900;
+}
+.onon{
+  color: var(--f-color01);
+}
+.prd_li{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--f-color04);
+  font-weight: bold;
+  padding-bottom: 5rem;
+}
+.prd_show{
+  width: 1200px; height: 100%;
+  margin: 0px auto;
+}
+.prd_prd{
+  width: 1200px; height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+.prd_prd li{
+  overflow: hidden;
+}
+.prd_prd li:hover{
+
+}
+.prd_prd li img{
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 100%; height: 100%;
+  /* border: 1px solid var(--main-color); */
+  justify-self: flex-start;
+  transition: 1s;
+}
+.prd_prd li img:hover{
+  scale: 1.1;
+  border: none;
+}
+/* .prd_prd li::after:hover{
+  content: '';
+  width: 100%; height: 100%;
+  background: #ccc;
+} */
+.prd_desc{
+  position: relative;
+  padding: 1rem 0px;
+}
+.prd_desc p{
+  font-size: var(--f-size01);
+  font-weight: bold;
+  text-align: start;
+  line-height: 2rem;
+}
+.prd_desc button{
+  float: right;
+  position: absolute;
+  top: 50%; right: 0px;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 메인 아카데미 섹션 */
+#main_aca{
+  position: relative;
+  width: 100%; height: 400px;
+  background: url(../images/03_PC_AA_Banner.png) no-repeat center / cover;
+  margin: 100px 0px;
+}
+.aca_desc{
+  width: 100%;
+  position: absolute;
+  top: 45%; 
+  text-align: center;
+}
+.aca_desc p{
+  letter-spacing: -2.5px;
+  font-weight: bold;
+  font-size: var(--f-size03);
+  line-height: 3rem;
+}
+.aca_desc p:last-child{
+  font-size: 1rem;
+}
+
+
+/* 메인 서비스 섹션 */
+
+#main_service{
+  text-align: center;
+}
+#main_service h2{
+  font-size: var(--f-size05);
+  padding: 5rem 0;
+  font-weight: 900;
+}
+#main_service article{
+  width: 700px; height: 100%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 100px;
+  padding-bottom: 100px;
+}
+.serv_box{
+  text-align: left;
+}
+.serv_box div{
+  height: 400px;
+  padding-bottom: 50px;
+}
+.mv, .sv{
+  object-fit: cover;
+  width: 100%; height: 100%;
+  box-shadow: 3px 3px 10px 1px gray;
+  display: block;
+}
+.mv{
+  border-radius: 200px 200px 200px 5px;
+}
+.sv{
+  margin-top: 100px;
+  border-radius: 200px 5px 200px 200px;
+}
+.serv_box h6{
+  padding: 10px 0px;
+  font-size: var(--f-size01);
+  letter-spacing: -2px;
+}
+.serv_box p{
+  padding: 10px 0px 25px 0px;
+  font-size: .75rem;
+  color: var(--f-color04);
+  line-height: 1rem;
+}
+.serv_box p span{
+  font-weight: bold;
+  color: var(--sub-color);
+}
+.serv_box a{
+  color: var(--sub-color);
+  font-size: .85rem;
+  font-weight: bold;
 }

@@ -80,4 +80,90 @@ header{
 }
 .h_nav_ul li{
   cursor: pointer;
+  transition: .2s;
+}
+.h_nav_ul li:hover{
+  color: var(--sub-color);
+}
+
+/* 어사이드 */
+aside{
+  width: 20%;
+  height: 100vh;
+  background: var(--bg-color01);
+  position: fixed;
+  z-index: 1000;
+  text-align: right;
+  left: -20%;
+  transition: .5s;
+}
+.x_btn{
+  display: inline-block;
+  width: 50px; height: 50px;
+  background: var(--bg-color02);
+  position: relative;
+  top: 0px; right: 0px;
+  cursor: pointer;
+}
+.crs1, .crs2{
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 3px; height: 30px;
+  background: var(--bg-color01);
+  border-radius: 5px;
+}
+.crs1{
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.crs2{
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.cate{
+  text-align: left;
+  padding: 0 1rem;
+}
+.cate h3{
+  font-size: var(--f-size02);
+  padding: 1rem 0;
+}
+.cate_li{
+  border-top: 1px solid var(--bg-color03);
+  padding: 1rem 0px;
+}
+.cate_li a:first-of-type{
+  margin: 1rem 0px;
+  font-weight: bold;
+}
+.cate_li a i.fa-solid{
+  float: right;
+  padding: 0px .5rem;
+  font-weight: bold;
+}
+.cate_li_ul{
+  display: none;
+  padding: 1rem ;
+}
+.cate_li_ul li{
+  font-size: 0.75rem;
+  padding: 0.5rem;
+}
+.cate_li_ul li a{
+  transition: .2s;
+}
+.cate_li_ul li a:hover{
+  color: var(--sub-color);
+}
+
+
+
+/* 추가 속성 */
+body{
+  overflow-x: hidden;
+  position: relative;
+  transition: .5s;
+  left: 0px;
+}
+.bg{
+  opacity: .5;
+  transition: .5s;
 }
